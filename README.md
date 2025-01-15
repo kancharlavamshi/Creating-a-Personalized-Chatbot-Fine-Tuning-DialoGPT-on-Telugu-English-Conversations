@@ -2,6 +2,8 @@
 
 This project demonstrates the development of a custom chatbot capable of engaging in personalized conversations in a hybrid language style—Telugu written in English. Using Microsoft’s DialoGPT as the foundation, we fine-tune the model on a handcrafted dataset to create a chatbot that delivers context-aware, natural, and meaningful interactions.
 
+✨✨ The detailed description of this project has been posted on Medium blogs; [please take a look](https://medium.com/@vamshi.kancharla461/training-a-custom-chatbot-on-whatsapp-data-and-deploying-with-streamlit-9fcb5997a054)
+
 ## 2. Data Collection & Preprocessing
 The success of any conversational AI lies in the quality of its dataset. For this project:
   Manual Dataset Creation:
@@ -18,7 +20,7 @@ The success of any conversational AI lies in the quality of its dataset. For thi
 
 ## 3. Model Training
     To train the chatbot:   
-    Model Choice:  
+    -- Model Choice  
     We selected DialoGPT (small version) for its efficiency and specialization in dialogue generation tasks.
     
     Fine-Tuning Process:
@@ -28,7 +30,11 @@ The success of any conversational AI lies in the quality of its dataset. For thi
     
     Output:    
     The fine-tuned model was saved locally, incorporating updated vocabulary for smooth deployment.
-    
+
+    ```
+    #Use the following command to start training:
+    python train_chatbot.py --data_path data/chatbot_data.json --output_dir results/ --epochs 50 --batch_size 16
+    ```
 ## 4. Custom Tokenization
     Why Custom Tokenization Matters:
     Telugu words written in English can lose meaning if split incorrectly.
@@ -52,11 +58,21 @@ The success of any conversational AI lies in the quality of its dataset. For thi
   
   Contextual Awareness:
   Maintains conversational flow by remembering prior exchanges and adapting responses accordingly.
+## 6. Inference Script
+    ```
+    #Start the chatbot using
+    python run_inference.py --model_path results/ --max_length 128
+    ```
 
-## 6. Deployment
+## 7. Deployment
 To make the chatbot accessible and user-friendly:
 Streamlit Frontend:
 A web interface for real-time user interaction with the chatbot.
 
 Flask API:
 Enables integration with other applications, ensuring versatility and scalability.
+
+## [Youtube](https://youtu.be/0JLXgKYl3fo)
+
+### Disclaimer:
+This project was developed purely for educational purposes to showcase the capabilities of fine-tuning a language model using custom datasets and deploying it in real-world applications. The chatbot was trained on anonymized and fictional WhatsApp chat data and is not intended for any commercial use or to infringe upon the rights or privacy of any individuals or platforms. I do not claim ownership of any real-world data or conversations used in this project, and all data used for training is purely for educational experimentation.
