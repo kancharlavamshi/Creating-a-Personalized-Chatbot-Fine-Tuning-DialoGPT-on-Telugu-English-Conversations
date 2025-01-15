@@ -13,10 +13,13 @@ The success of any conversational AI lies in the quality of its dataset. For thi
   Input: "Ela unnav?" (How are you?)
   Response: "Nenu bagunnanu, nuvvu ela unnaru?" (I’m fine, how are you?)
   ```
+  ![chat1](https://github.com/user-attachments/assets/b892aef5-ba36-4f9c-8da0-84418d44f9a2)
+
   Dataset Cleaning:  
   Removed irrelevant and incomplete entries.
   Normalized punctuation and ensured proper alignment of inputs and responses.
   This process resulted in a high-quality dataset tailored for the chatbot’s intended use case.
+  
 
 ## 3. Model Training
     To train the chatbot:   
@@ -48,6 +51,9 @@ The success of any conversational AI lies in the quality of its dataset. For thi
     Accurate interpretation of Telugu-English phrases.
     Improved contextual understanding.
     Consistent and meaningful responses.
+
+  ![chat2](https://github.com/user-attachments/assets/1fd40c75-2411-46a7-855b-010031c00bc6)
+  
 ## 5. Unique Features
   This chatbot stands out due to:
   Hybrid Language Support:
